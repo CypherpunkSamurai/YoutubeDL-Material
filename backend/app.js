@@ -247,7 +247,7 @@ async function runFilesToDBMigration() {
 }
 
 async function startServer() {
-    if (process.env.USING_HEROKU && process.env.PORT) {
+    if (process.env.PORT) {
         // default to heroku port if using heroku
         backendPort = process.env.PORT || backendPort;
 
